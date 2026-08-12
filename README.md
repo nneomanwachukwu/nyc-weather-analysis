@@ -2,13 +2,13 @@
 
 > **Cleaning data is not a preliminary task—it is the analysis that makes every subsequent insight trustworthy.**
 
-This project documents an end-to-end exploratory analysis of a 31-day New York City weather dataset using **Python**, **Pandas**, and **Plotly Express**. Starting with raw weather observations stored in a CSV file, the project systematically evaluates data quality, resolves inconsistencies, explores the statistical behaviour of weather variables, investigates relationships between them, and communicates the results through interactive visualisations.
+This project presents an end-to-end exploratory analysis of a 31-day New York City weather dataset using Python, Pandas, and Plotly Express. The analysis covers data cleaning, quality assessment, exploratory data analysis (EDA), statistical summaries, relationship analysis, and interactive visualizations to uncover meaningful weather patterns.
 
-Rather than simply producing charts, the notebook demonstrates a disciplined analytical workflow that mirrors how real-world datasets are prepared before business decisions are made.
+Beyond creating visualizations, the notebook demonstrates a disciplined analytical workflow that mirrors how real-world datasets are prepared before business decisions are made.
 
 
 
-# The Problem
+# Project Context
 
 Raw datasets are rarely ready for analysis. Missing values, inconsistent entries, incorrect data types, and duplicate records can all lead to misleading conclusions if left untreated.
 
@@ -20,7 +20,7 @@ The purpose of this project is to demonstrate a practical workflow for transform
 
 **Source:** New York City Weather Dataset
 
-**Period Covered:** 31 Days
+**Observation Period:** 31 Days
 
 **Format:** CSV
 
@@ -52,15 +52,14 @@ The dataset contains daily weather observations including:
 
 ## Data Import
 
-The project begins by importing the weather dataset from a CSV file using a reusable Python function with basic exception handling to improve reliability and code reusability.
-
+The dataset is imported from a CSV file using a reusable Python function with basic exception handling to improve reliability and code reusability.
 
 
 ## Data Understanding
 
 Before making any changes, the dataset is explored to understand its structure and overall quality.
 
-The notebook examines:
+The dataset is evaluated by examining:
 
 - Dataset dimensions
 - Sample records
@@ -93,9 +92,7 @@ These steps improve consistency and analytical reliability.
 
 ## Exploratory Data Analysis
 
-After cleaning, the notebook investigates the statistical characteristics of the major weather variables.
-
-The analysis focuses on:
+After cleaning, the cleaned dataset is explored to examine:
 
 - Temperature
 - Dew Point
@@ -115,13 +112,10 @@ The project examines relationships between numerical weather variables using cor
 
 ## Interactive Visualisation
 
-The analysis concludes with interactive visualisations built with Plotly Express, allowing weather variables to be explored visually and making trends easier to interpret.
+The project concludes with interactive visualizations developed using Plotly Express, making trends and relationships easier to interpret.
 
 
-
-# What This Project Demonstrates
-
-This project demonstrates the ability to:
+# Skills Demonstrated
 
 - Import external datasets into Python.
 - Assess data quality before analysis.
@@ -163,17 +157,25 @@ nyc-weather-analysis/
 
 
 
-# Key Takeaway
+# Key Insights
 
-This project reinforces an important principle in data analytics:
+- The average temperature over the 31-day period was **34.68°F**, with temperatures ranging from **20°F** to **50°F**, indicating considerable day-to-day variation during the month.
 
-> Reliable insights begin with reliable data.
+- **Temperature** and **Dew Point** showed a **strong positive correlation (0.88)**, suggesting that warmer days generally coincided with higher moisture levels in the air.
 
-By systematically inspecting, cleaning, validating, and exploring the dataset before interpretation, the analysis establishes a dependable foundation for understanding weather patterns and supporting further analytical work.
+- **Humidity** and **Visibility** exhibited a **moderately strong negative correlation (-0.66)**, indicating that higher humidity was often associated with reduced visibility.
+
+- The dataset required preprocessing before analysis, including handling missing values, replacing trace precipitation values, and correcting data types, highlighting the importance of data quality in analytical workflows.
+
+- Interactive visualizations made it easier to identify weather trends and relationships that would have been less apparent from summary statistics alone.
 
 
 
 
-**Author**
+## Author
 
 **Nneoma Nwachukwu**
+
+Aspiring Data Analyst with interests in Python, SQL, data visualization, and business analytics.
+
+GitHub: @nneomanwachukwu
